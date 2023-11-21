@@ -1,22 +1,26 @@
-<section class="weather__card" (click)="openDetails()" [ngClass]="{'weather__card-dark': darkMode}">
-  <!-- TODO: make the city name dynamic -->
+<section class="weather__card"
+
+  >
+  <!--  (click)="openDetails()"
+  [ngClass]="{'weather__card-dark': darkMode}"
+     TODO: make the city name dynamic -->
   <span class="city-name__text">Paris</span>
-    <div class="weather-icon__container" [ngSwitch]="true">
-      <svg *ngSwitchCase="condition === 'Clouds'">
-      </svg>
+    <!-- <div class="weather-icon__container" [ngSwitch]="true">
+        <svg *ngSwitchCase="condition === 'Clouds'">
+        </svg>
 
-      <svg *ngSwitchCase="condition === 'Rain' || condition === 'Drizzle'">
-      </svg>
+        <svg *ngSwitchCase="condition === 'Rain' || condition === 'Drizzle'">
+        </svg>
 
-      <svg *ngSwitchCase="condition === 'Storm'">
-      </svg>
+        <svg *ngSwitchCase="condition === 'Storm'">
+        </svg>
 
 
-      <svg *ngSwitchCase="condition === 'Sunny' || condition === 'Clear'">
-      </svg>
+        <svg *ngSwitchCase="condition === 'Sunny' || condition === 'Clear'">
+        </svg>
 
-    <svg  *ngSwitchCase="condition === 'Fog'"></svg>
-    </div>
+      <svg  *ngSwitchCase="condition === 'Fog'"></svg>
+    </div> -->
     <div class="temperature-text__container">
       <span class="temperature__text">currentTemp</span>
       <span class="temperature-metric__text">°</span>

@@ -10,4 +10,14 @@ import { CommonModule } from '@angular/common';
 })
 export class WeatherComponent {
 
+  showMenu: boolean = true;
+  darkModeActive: boolean = false;
+
+  toggleMenu(){
+    this.showMenu = !this.showMenu;
+  }
+  modeToggleSwith(){
+    this.darkModeActive = !this.darkModeActive;
+  }
+
 }
