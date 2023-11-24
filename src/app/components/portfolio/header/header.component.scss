@@ -1,0 +1,78 @@
+@import "../../../../variables.scss";
+
+.header {
+
+  height: 76px;
+  border: 1px solid $border-line;
+  padding: 11px 0;
+  // .header__wrapper
+
+  &__wrapper {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+  }
+
+  // .header__logo-block
+
+  &__logo-block {
+      margin-left: 24px;
+      font-weight: bold;
+      font-size: 3.6rem;
+      line-height: 5.4rem;
+      color: $title-text;
+
+  }
+
+  // .header__nav-block
+
+  &__nav-block {
+      display: flex;
+      align-items: center;
+      justify-content: space-between
+  }
+
+  // .header__main-nav
+
+  &__main-nav {
+      margin-right: 65px;
+  }
+
+  // .header__link
+
+  &__link {
+      color: $title-text;
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      text-align: center;
+
+      &:not(:last-child) {
+          margin-right: 47px;
+      }
+  }
+
+  // .header__night-switcher
+
+  &__night-switcher {
+      display: flex;
+      justify-content:left;
+      align-items: center;
+      margin-right: 25px;
+      width: 54px;
+      height: 30px;
+      border: 2px solid $title-text;
+      border-radius: 50px;
+  }
+
+  // .header__night-switcher-btn
+
+  &__night-switcher-btn {
+      margin-left: 5px;
+      width: 18px;
+      height: 18px;
+      background: $title-text;
+      border-radius: 50px;
+  }
+}
+

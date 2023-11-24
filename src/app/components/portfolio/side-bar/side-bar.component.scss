@@ -1,0 +1,113 @@
+@import "../../../../variables.scss";
+
+.about-me {
+
+  border-bottom: 1px solid $border-line;
+  border-left: 1px solid $border-line;
+  border-right: 1px solid $border-line;
+  padding: 50px 46px;
+  min-height: calc(100vh - 76px);
+  //margin: 0 auto;
+  height: 100%;
+
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+
+  }
+
+
+  // .about-me__avatar
+
+  &__photo {
+    width: 160px;
+    height: 160px;
+   // margin: 0 auto;
+   // overflow: hidden;
+    border-radius: 50%;
+    border: 3px solid $border-line;
+  }
+  &__avatar {
+    width: 100%;
+    height: 100%;
+    //margin: 0 auto;
+  }
+
+  // .about-me__name
+
+  &__name-job {
+
+  }
+  &__name {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 3.6rem;
+    background: linear-gradient(101.83deg, #5671A6 20%, #80a4b9 58.66%);
+    //background-clip: text;
+    //text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+   // margin-top: 40px;
+
+  }
+
+  // .about-me__job
+
+  &__job {
+    font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+    color: $heading-text;
+  }
+
+  // .about-me__description
+
+  &__description {
+    //margin-top: 40px;
+    font-weight: 500;
+    font-size: 1.6rem;
+    line-height: 2rem;
+    text-align: center;
+    color: $info-text;
+    //flex: 1 1 auto;
+  }
+
+  // .about-me__social-links
+
+  &__social-links {
+    //margin-top: 40px;
+    display: flex;
+    align-items: center;
+  }
+
+  // .about-me__social-link
+
+  &__social-link {
+    &:not(:last-child) {
+      margin-right: 15px;
+  }
+  }
+
+  // .about-me__contact-me-btn
+
+  &__contact-me-btn {
+    //margin-top: 40px;
+    width: 164px;
+    height: 44px;
+    border-radius: 100px;
+    text-align: center;
+    background: $title-text;
+    color: #ffffff;
+  }
+}
+
+.social-link {
+
+  // .social-link__icon
+
+  &__icon {
+  }
+}
