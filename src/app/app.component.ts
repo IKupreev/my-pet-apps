@@ -8,7 +8,11 @@ import { SideBarComponent } from './components/portfolio/side-bar/side-bar.compo
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, HeaderComponent, SideBarComponent],
+  imports: [CommonModule,
+            RouterOutlet,
+            HeaderComponent,
+            SideBarComponent,
+            ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
