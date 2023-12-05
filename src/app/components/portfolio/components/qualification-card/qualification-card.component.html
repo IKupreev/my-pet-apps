@@ -1,8 +1,8 @@
-<main class="qualification-card__item">
-  <div class="qualification-card__specialization">specilization</div>
-  <div class="qualification-card__location">location</div>
+<main class="qualification-card">
+  <p class="qualification-card__specialization">{{ card?.specilization }}</p>
+  <p class="qualification-card__location">{{ card?.location }}</p>
   <!-- <Icons name="calendar" width="15" height="16" class="qualification-card__calendar-icon" /> -->
   <span class="qualification-card__data">
-    dataStart - dataEnd
+    {{ card?.dataStart }} - {{ card?.dataEnd }}
   </span>
 </main>

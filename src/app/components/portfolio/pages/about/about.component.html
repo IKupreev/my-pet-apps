@@ -6,7 +6,12 @@
         Web developer, with extensive knowledge and years of experience, working in web
         technologies and UI/UX design, delivering quality work.
       </p>
-      <section class="about__about-cards">
+      <section *ngIf="countWorked$ | async as work">
+        <app-about-card
+          *ngIf="experience$ | async as exp"
+          [experience]="exp"
+          [countWorked]="work"
+        ></app-about-card>
         <!-- <AboutCards countWorked={countWorked} minData={minData} maxData={maxData} /> -->
       </section>
     </section>
@@ -16,6 +21,16 @@
         <span class="about__label">My personal journey</span>
       </div>
       <div class="about__tabs">
+        <button
+          (click)="setActiveTab(true)"
+          [ngClass]="firstTab === true ? 'about__btn-educat active' : 'about__btn-educat'"
+        >Education
+        </button>
+        <button
+          (click)="setActiveTab(false)"
+          [ngClass]="firstTab === false ? 'about__btn-work active' : 'about__btn-work'"
+        >Work
+        </button>
         <!-- <button
           onClick={() => SetActiveTab(0)}
           class={activeTab === 0 ? 'about__btn-educat active' : 'about__btn-educat'}
@@ -44,6 +59,26 @@
         </button> -->
       </div>
       <div class="about__line"></div>
+      <section
+        class="about__qualification-cards"
+        *ngIf="firstTab === true"
+      >
+        <app-qualification-card
+          class="about__item"
+          *ngFor="let card of educations$ | async"
+          [card]="card"
+          ></app-qualification-card>
+      </section>
+      <section
+      class="about__qualification-cards"
+      *ngIf="firstTab === false"
+    >
+      <app-qualification-card
+        class="about__item"
+        *ngFor="let card of work$ | async"
+        [card]="card"
+        ></app-qualification-card>
+    </section>
       <!-- <section class="about__qualification-cards">
         {isLoading
           ? [...new Array(4)].map((_, index) => <Skeleton key={index} />)

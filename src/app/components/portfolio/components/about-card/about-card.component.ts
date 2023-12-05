@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -9,5 +9,8 @@ import { CommonModule } from '@angular/common';
   styleUrl: './about-card.component.scss'
 })
 export class AboutCardComponent {
+
+  @Input() experience = 0;
+  @Input() countWorked = 0;
 
 }

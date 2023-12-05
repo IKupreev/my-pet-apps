@@ -1,5 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { WorkItemInterface } from '../../../shared/interfaces';
 
 @Component({
   selector: 'app-qualification-card',
@@ -9,5 +10,7 @@ import { CommonModule } from '@angular/common';
   styleUrl: './qualification-card.component.scss'
 })
 export class QualificationCardComponent {
+
+  @Input() card?: WorkItemInterface;
 
 }

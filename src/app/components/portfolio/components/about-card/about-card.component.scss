@@ -1,0 +1,42 @@
+@import "../../../../../variables.scss";
+
+.about-card
+{       display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-top: 23px;
+
+&__card {
+      width: 150px;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      padding: 14px 14px 8px 10px;
+      &:not(:last-child)
+      {
+        margin-right: 47px;
+      }
+}
+  &__info {
+    color: $heading-text;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 66px;
+}
+
+// .about__subtitle
+
+&__subtitle {
+
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+}
+
+// .about__count
+
+&__count {
+    font-size: 3.6rem;
+}
+}
