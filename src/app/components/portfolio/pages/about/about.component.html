@@ -8,8 +8,7 @@
       </p>
       <section *ngIf="countWorked$ | async as work">
         <app-about-card
-          *ngIf="experience$ | async as exp"
-          [experience]="exp"
+          [experience]="experience$ | async"
           [countWorked]="work"
         ></app-about-card>
         <!-- <AboutCards countWorked={countWorked} minData={minData} maxData={maxData} /> -->

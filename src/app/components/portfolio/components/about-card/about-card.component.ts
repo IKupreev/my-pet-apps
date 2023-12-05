@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { WorkItemInterface } from '../../../shared/interfaces';
 
 @Component({
   selector: 'app-about-card',
@@ -10,7 +11,7 @@ import { CommonModule } from '@angular/common';
 })
 export class AboutCardComponent {
 
-  @Input() experience = 0;
+  @Input() experience: number | null = 0;
   @Input() countWorked = 0;
 
 }
