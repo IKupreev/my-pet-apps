@@ -1,0 +1,77 @@
+@import "../../../../../variables.scss";
+
+.skills {
+  border-bottom: 1px solid $border-line;
+  border-right: 1px solid $border-line;
+  padding: 28px 115px 41px;
+  min-height: calc(100vh - 76px);
+  height: 100%;
+
+
+  &__wrapper {
+
+      height: 100%;
+      text-align: center;
+  }
+
+  &__title {
+      font-weight: 600;
+      font-size: 3.2rem;
+      line-height: 4.8rem;
+      color: $heading-text;
+  }
+
+  &__subtitle {
+      margin-top: 13px;
+      font-weight: 500;
+      font-size: 1.4rem;
+      line-height: 2.1rem;
+      color: $info-text;
+  }
+
+  &__container {
+      margin-top: 31px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      //height: 100%;
+  }
+  &__oneBlock {
+
+  }
+
+  &__block-title {
+      font-weight: 600;
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      color: $heading-text;
+  }
+
+
+
+  &__experience {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin: 32px 0;
+
+  }
+
+  &__twoBlock {
+
+  }
+
+  &__card {
+      width: 150px;
+      height: 150px;
+      display: flex;
+      flex-direction: column;
+      padding: 14px 14px 8px 10px;
+      &:not(:last-child)
+      {
+        margin-right: 47px;
+      }
+
+  }
+
+}
