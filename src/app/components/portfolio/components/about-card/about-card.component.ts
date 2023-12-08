@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { WorkItemInterface } from '../../../shared/interfaces';
 
 @Component({
   selector: 'app-about-card',
