@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, catchError, map, of, share } from 'rxjs';
-import { DataRangeInterface, WorkInterface, WorkItemInterface } from '../../shared/interfaces';
+import { DataRangeInterface, WorkItemInterface } from '../../shared/interfaces';
 import { error } from 'console';
 
 @Injectable({
@@ -20,10 +20,6 @@ export class SpecificationsService {
   constructor(
     private httpClient: HttpClient
   ) { }
-
-  public getExperience() {
-    return this.defaultRange;
-  }
 
   public getEducations(): Observable<WorkItemInterface[]> {
     return this.httpClient.get<WorkItemInterface[]>(this.urlEduc);

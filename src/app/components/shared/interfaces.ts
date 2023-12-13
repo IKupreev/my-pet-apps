@@ -13,3 +13,10 @@ export interface WorkInterface {
   dataRange: DataRangeInterface;
   workList: WorkItemInterface[];
 }
+
+export interface SkillsInterface {
+  id?: number,
+  nameIcon?: string,
+  title: string,
+  progress: number
+}

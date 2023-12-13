@@ -61,22 +61,22 @@
     background: #CC985B;
 }
 
-.line::before {
-    content: "";
-    background-image: url("./wave2.svg");
-    height: 16px;
-    left: 0;
-    position: absolute;
-    top: -16px;
-    width: 100%;
-}
+// .line::before {
+//     content: "";
+//     background-image: url("./wave2.svg");
+//     height: 16px;
+//     left: 0;
+//     position: absolute;
+//     top: -16px;
+//     width: 100%;
+// }
 
-.line::after {
-    content: "";
-    background-image: url("./wave1.svg");
-    height: 17px;
-    left: 0;
-    position: absolute;
-    top: -17px;
-    width: 100%;
-}
+// .line::after {
+//     content: "";
+//     background-image: url("./wave1.svg");
+//     height: 17px;
+//     left: 0;
+//     position: absolute;
+//     top: -17px;
+//     width: 100%;
+// }
