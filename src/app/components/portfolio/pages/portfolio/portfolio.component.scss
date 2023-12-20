@@ -1,0 +1,73 @@
+@import "../../../../../variables.scss";
+
+.portfolio {
+
+  border-bottom: 1px solid $border-line;
+  border-right: 1px solid $border-line;
+  padding: 28px 115px 41px;
+  min-height: calc(100vh - 76px);
+  height: 100%;
+
+  // .portfolio__wrapper
+
+  &__wrapper {
+    height: 100%;
+    text-align: center;
+  }
+
+  // .portfolio__title
+
+  &__title {
+    font-weight: 600;
+    font-size: 3.2rem;
+    line-height: 4.8rem;
+    color: $heading-text;
+  }
+
+  // .portfolio__slider
+
+  &__slider {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 23px;
+  }
+
+  &__slider-img {
+    width: 428px;
+    padding-right: 50px;
+  }
+  // .portfolio__slider-title
+
+  &__slider-title {
+    font-weight: 600;
+    font-size: 2.4rem;
+    line-height: 4.8rem;
+    color: $heading-text;
+  }
+
+  // .portfolio__slider-description
+
+  &__slider-description {
+    margin-top: 19px;
+    width: 298px;
+    font-weight: 500;
+    font-size: 1.4rem;
+    line-height: 2.1rem;
+  }
+
+
+  &__slider-btn {
+    margin-top: 40px;
+    width: 127px;
+    height: 44px;
+    border-radius: 50px;
+    border: 2px solid $title-text;
+    background-color: transparent;
+    color: $title-text;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
+}
