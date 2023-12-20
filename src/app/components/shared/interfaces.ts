@@ -18,5 +18,5 @@ export interface SkillsInterface {
   id?: number,
   nameIcon?: string,
   title: string,
-  progress: number
+  progress?: number
 }

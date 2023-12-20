@@ -1,9 +1,10 @@
 <div class="skillsBlock">
   <div class="block">
     <!-- <Icons name={nameIcon} width="27.8" height="30" class="icon" /> -->
+    <!-- <img class="icon" src='{{"assets/img/skills/" + skills?.nameIcon + ".svg" | lowercase}}'> -->
+    <app-icon [theName]="skills?.nameIcon"></app-icon>
     <div class="info">
       <h3>{{ skills?.title }}</h3>
-      <label>{{ skills?.progress }}%</label>
     </div>
   </div>
   <!-- <div
