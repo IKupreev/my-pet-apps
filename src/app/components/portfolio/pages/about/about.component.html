@@ -3,15 +3,17 @@
     <section class="about__topBlock">
       <h1 class="about__title">About</h1>
       <p class="about__description">
+        Работаю системным администратором, изучаю веб разработку, фреймворк Angular, HTML, CSS, JavaScript, TypeScript. А так же практикуюсь в разработке игр на Unity используя C#.
+      </p>
+      <!-- <p class="about__description">
         Web developer, with extensive knowledge and years of experience, working in web
         technologies and UI/UX design, delivering quality work.
-      </p>
+      </p> -->
       <section *ngIf="countWorked$ | async as work">
         <app-about-card
           [experience]="experience$ | async"
           [countWorked]="work"
         ></app-about-card>
-        <!-- <AboutCards countWorked={countWorked} minData={minData} maxData={maxData} /> -->
       </section>
     </section>
     <section class="about__bottomBlock">
@@ -30,32 +32,7 @@
           [ngClass]="firstTab === false ? 'about__btn-work active' : 'about__btn-work'"
         >Work
         </button>
-        <!-- <button
-          onClick={() => SetActiveTab(0)}
-          class={activeTab === 0 ? 'about__btn-educat active' : 'about__btn-educat'}
-        >
-          <Icons
-            name="educations"
-            width="26"
-            height="19"
-            color={activeTab === 0 ? '#5671A6' : ''}
-            class="about__btn-icon"
-          />
-          <span>Education</span>
-        </button>
-        <button
-          onClick={() => SetActiveTab(1)}
-          class={activeTab === 1 ? 'about__btn-work active' : 'about__btn-work'}
-        >
-          <Icons
-            name="work"
-            width="26"
-            height="19"
-            color={activeTab === 1 ? '#5671A6' : ''}
-            class="about__btn-icon"
-          />
-          <span>Work</span>
-        </button> -->
+
       </div>
       <div class="line"></div>
       <section
@@ -69,22 +46,15 @@
           ></app-qualification-card>
       </section>
       <section
-      class="about__qualification-cards"
-      *ngIf="firstTab === false"
-    >
-      <app-qualification-card
-        class="about__item"
-        *ngFor="let card of work$ | async"
-        [card]="card"
-        ></app-qualification-card>
-    </section>
-      <!-- <section class="about__qualification-cards">
-        {isLoading
-          ? [...new Array(4)].map((_, index) => <Skeleton key={index} />)
-          : activeTab === 0
-          ? educationItems.map((obj) => <QualificationCards key={obj.id} {...obj} />)
-          : workItems.map((obj) => <QualificationCards key={obj.id} {...obj} />)}
-      </section> -->
+        class="about__qualification-cards"
+        *ngIf="firstTab === false"
+      >
+        <app-qualification-card
+          class="about__item"
+          *ngFor="let card of work$ | async"
+          [card]="card"
+          ></app-qualification-card>
+      </section>
     </section>
   </div>
 </section>

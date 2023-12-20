@@ -26,16 +26,15 @@
     width: 160px;
     height: 160px;
    // margin: 0 auto;
-   // overflow: hidden;
+    overflow: hidden;
     border-radius: 50%;
     border: 3px solid $border-line;
   }
+
   &__avatar {
     width: 100%;
-    height: 100%;
-    //margin: 0 auto;
+    margin-top: -15px;
   }
-
   // .about-me__name
 
   // &__name-job {
@@ -46,7 +45,7 @@
     font-size: 2.4rem;
     line-height: 3.6rem;
     background: linear-gradient(101.83deg, #5671A6 20%, #80a4b9 58.66%);
-    //background-clip: text;
+    background-clip: text;
     //text-fill-color: transparent;
     // -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -103,6 +102,8 @@
     color: #ffffff;
   }
 }
+
+
 
 // .social-link {
 

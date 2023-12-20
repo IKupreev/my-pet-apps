@@ -3,7 +3,7 @@
     <h1 class="skills__title">Skills</h1>
     <h1 class="skills__subtitle">My technical level</h1>
     <div class="skills__container">
-      <section class="skills__oneBlock">
+      <section class="skills__block">
         <div class="line"></div>
         <h2 class="skills__block-title">Frontend Developer</h2>
         <div class="skills__experience">
@@ -11,12 +11,10 @@
             *ngFor="let skill of frontData$ | async"
             [skills]="skill"
           ></app-Expirience-Block>
-          <!-- {isLoading
-            ? [...new Array(4)].map((_, index) => <Skeleton key={index} />)
-            : frontend.map((obj) => <ExperienceBlock key={obj.id} {...obj} />)} -->
+
         </div>
       </section>
-      <section class="skills__twoBlock">
+      <section class="skills__block">
         <div class="line"></div>
         <h1 class="skills__block-title">Designer</h1>
         <div class="skills__experience">
@@ -24,9 +22,6 @@
             *ngFor="let skill of designData$ | async"
             [skills]="skill"
           ></app-Expirience-Block>
-          <!-- {isLoading
-            ? [...new Array(4)].map((_, index) => <Skeleton key={index} />)
-            : designer.map((obj) => <ExperienceBlock key={obj.id} {...obj} />)} -->
         </div>
       </section>
     </div>
