@@ -18,24 +18,24 @@ import { BreakpointObserver, Breakpoints, LayoutModule } from '@angular/cdk/layo
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
-export class AppComponent implements OnInit {
+export class AppComponent  {
 
-  hideSideMenu = false;
+  // hideSideMenu = false;
 
-  constructor(public breakpointObserver: BreakpointObserver) {}
+  // constructor(public breakpointObserver: BreakpointObserver) {}
 
-  ngOnInit() {
-    this.breakpointObserver.observe([
-      Breakpoints.HandsetPortrait,
-      Breakpoints.TabletPortrait,
-    ])
-    .subscribe(result => {
-      this.hideSideMenu = false;
+  // ngOnInit() {
+  //   this.breakpointObserver.observe([
+  //     Breakpoints.HandsetPortrait,
+  //     Breakpoints.TabletPortrait,
+  //   ])
+  //   .subscribe(result => {
+  //     this.hideSideMenu = false;
 
-      if(result.matches) {
-        this.hideSideMenu = true;
-      }
-    })
+  //     if(result.matches) {
+  //       this.hideSideMenu = true;
+  //     }
+  //   })
 
-  }
+  // }
 }

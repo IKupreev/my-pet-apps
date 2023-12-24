@@ -16,9 +16,11 @@
       width: 271px;
       flex: 0 0 auto;
   }
-  &__side-bar.hideSideMenu {
-    width: 20px;
+  @media(max-width: 800px)  {
+    &__side-bar {
+      max-width: 30px;
 
+    }
   }
 
   // .App__About
