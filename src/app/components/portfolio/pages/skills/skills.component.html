@@ -8,6 +8,7 @@
         <h2 class="skills__block-title">Frontend Developer</h2>
         <div class="skills__experience">
           <app-Expirience-Block
+            class="skills__experience-block"
             *ngFor="let skill of frontData$ | async"
             [skills]="skill"
           ></app-Expirience-Block>
@@ -19,6 +20,7 @@
         <h1 class="skills__block-title">Designer</h1>
         <div class="skills__experience">
           <app-Expirience-Block
+            class="skills__experience-block"
             *ngFor="let skill of designData$ | async"
             [skills]="skill"
           ></app-Expirience-Block>
