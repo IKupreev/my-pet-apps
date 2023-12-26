@@ -1,7 +1,7 @@
 @import "../../../../../variables.scss";
 
-.about-card
-{       display: flex;
+.about-card {
+  display: flex;
   align-items: center;
   justify-content: start;
   margin-top: 23px;
@@ -43,5 +43,47 @@
 
   &__count {
       font-size: 3.6rem;
+  }
+}
+
+@media(max-width: 800px)  {
+  .about-card {
+    margin-top: 5px;
+
+      &__card {
+            width: 150px;
+            height: 150px;
+
+            padding: 14px 14px 8px 0px;
+            &:not(:last-child)
+            {
+              margin-right: 8px;
+            }
+      }
+        &__info {
+
+          margin-top: 16px;
+      }
+
+      &__icon {
+        width: 17px;
+        height: 20px;
+      }
+
+      // .about__subtitle
+
+      &__subtitle {
+
+          font-weight: 500;
+          font-size: 1.4rem;
+          line-height: 2.1rem;
+      }
+
+      // .about__count
+
+      &__count {
+          font-size: 2.6rem;
+          margin-left: 5px;
+      }
   }
 }

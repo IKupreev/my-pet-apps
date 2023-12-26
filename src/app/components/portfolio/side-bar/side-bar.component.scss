@@ -1,5 +1,8 @@
 @import "../../../../variables.scss";
 
+
+
+
 .about-me {
 
   border-bottom: 1px solid $border-line;
@@ -10,6 +13,7 @@
   //margin: 0 auto;
   height: 100%;
 
+
   &__wrapper {
     display: flex;
     align-items: center;
@@ -19,6 +23,19 @@
 
   }
 
+
+  @media(max-width: 800px)  {
+    &__wrapper.is-mobile {
+      display: none;
+
+    }
+
+    &__mobile {
+      display: block;
+    }
+
+
+  }
 
   // .about-me__avatar
 
@@ -103,6 +120,12 @@
   }
 }
 
+@media(max-width: 800px)  {
+  .about-me.is-mobile {
+    padding: 5px 4px;
+  }
+
+}
 
 
 // .social-link {

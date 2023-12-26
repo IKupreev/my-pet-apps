@@ -75,4 +75,57 @@
       border-radius: 50px;
   }
 }
+@media(max-width: 650px)  {
+  .header {
+    background-color: $background;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+        &__logo-block {
+          width: 120px;
+          margin-left: 14px;
+          font-weight: bold;
+          font-size: 3.0rem;
+          line-height: 3.0rem;
+          color: $title-text;
+      }
+
+  }
+}
+
+@media(max-width: 520px)  {
+  .header {
+    background-color: $background;
+    position: fixed;
+    width: 100%;
+    top: 0;
+
+
+        &__logo-block {
+          width: 120px;
+          margin-left: 14px;
+          font-weight: bold;
+          font-size: $mobile-title-font-size;
+          line-height: $mobile-title-line-height;
+          color: $title-text;
+      }
+
+      &__main-nav {
+        margin-right: 15px;
+    }
+
+      &__link {
+        color: $title-text;
+        font-weight: 600;
+        font-size: $mobile-nav-font-size;
+        line-height: 2.4rem;
+        text-align: center;
+        &:not(:last-child) {
+            margin-right: 20px;
+        }
+    }
+  }
+}
+
 
