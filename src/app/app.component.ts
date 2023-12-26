@@ -20,6 +20,12 @@ import { BreakpointObserver, Breakpoints, LayoutModule } from '@angular/cdk/layo
 })
 export class AppComponent  {
 
+  condition: boolean = false;
+
+  toggle() {
+    this.condition=!this.condition;
+  }
+
   // hideSideMenu = false;
 
   // constructor(public breakpointObserver: BreakpointObserver) {}

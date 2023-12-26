@@ -12,10 +12,10 @@ import { LayoutModule, BreakpointObserver, Breakpoints } from '@angular/cdk/layo
 })
 export class SideBarComponent  {
 
-  condition: boolean = false;
+  // condition: boolean = false;
 
-  toggle() {
-    this.condition=!this.condition;
-  }
+  // toggle() {
+  //   this.condition=!this.condition;
+  // }
 
 }
