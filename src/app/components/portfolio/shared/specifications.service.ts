@@ -1,16 +1,16 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, catchError, map, of, share } from 'rxjs';
-import { DataRangeInterface, WorkItemInterface } from '../../shared/interfaces';
+import { DataRangeInterface, EndPoint, WorkItemInterface } from '../../shared/interfaces';
 import { error } from 'console';
+import { environment } from '../../../../environments/environment';
+
 
 @Injectable({
   providedIn: 'root'
 })
 export class SpecificationsService {
 
-  urlEduc = 'https://638c8f9feafd555746a8fe43.mockapi.io/educations';
-  urlWork = 'https://638c8f9feafd555746a8fe43.mockapi.io/works';
 
   private readonly defaultRange: DataRangeInterface = {
     dataStart: new Date().getFullYear(),
@@ -22,13 +22,13 @@ export class SpecificationsService {
   ) { }
 
   public getEducations(): Observable<WorkItemInterface[]> {
-    return this.httpClient.get<WorkItemInterface[]>(this.urlEduc);
+    return this.httpClient.get<WorkItemInterface[]>(`${environment.mockUrl}/${EndPoint.educations}`);
 
   }
 
   public getWorks(): Observable<WorkItemInterface[]> {
     return this.httpClient
-      .get<WorkItemInterface[]>(this.urlWork)
+      .get<WorkItemInterface[]>(`${environment.mockUrl}/${EndPoint.works}`)
       .pipe(share());
   }
 

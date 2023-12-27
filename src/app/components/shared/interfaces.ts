@@ -20,3 +20,10 @@ export interface SkillsInterface {
   title: string,
   progress?: number
 }
+
+export enum EndPoint {
+  frontend = "frontend",
+  Designer = "Designer",
+  educations = "educations",
+  works = "works"
+}
