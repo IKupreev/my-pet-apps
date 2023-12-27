@@ -22,13 +22,13 @@ export class SpecificationsService {
   ) { }
 
   public getEducations(): Observable<WorkItemInterface[]> {
-    return this.httpClient.get<WorkItemInterface[]>(`${environment.mockUrl}/${EndPoint.educations}`);
+    return this.httpClient.get<WorkItemInterface[]>(`${environment.mockUrl}/${EndPoint.Educations}`);
 
   }
 
   public getWorks(): Observable<WorkItemInterface[]> {
     return this.httpClient
-      .get<WorkItemInterface[]>(`${environment.mockUrl}/${EndPoint.works}`)
+      .get<WorkItemInterface[]>(`${environment.mockUrl}/${EndPoint.Works}`)
       .pipe(share());
   }
 

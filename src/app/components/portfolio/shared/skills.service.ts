@@ -12,7 +12,7 @@ export class SkillsService {
   constructor(private httpClient: HttpClient) { }
 
   public getFront(): Observable<SkillsInterface[]> {
-    return this.httpClient.get<SkillsInterface[]>(`${environment.mockUrl}/${EndPoint.frontend}`);
+    return this.httpClient.get<SkillsInterface[]>(`${environment.mockUrl}/${EndPoint.Frontend}`);
   }
   public getDesign(): Observable<SkillsInterface[]> {
     return this.httpClient.get<SkillsInterface[]>(`${environment.mockUrl}/${EndPoint.Designer}`);

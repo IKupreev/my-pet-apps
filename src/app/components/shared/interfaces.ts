@@ -22,8 +22,8 @@ export interface SkillsInterface {
 }
 
 export enum EndPoint {
-  frontend = "frontend",
-  Designer = "Designer",
-  educations = "educations",
-  works = "works"
+  Frontend = "frontend",
+  Designer = "designer",
+  Educations = "educations",
+  Works = "works"
 }
